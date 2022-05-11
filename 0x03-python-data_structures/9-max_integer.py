@@ -1,13 +1,10 @@
 #!/usr/bin/python3
 
-from xml.dom.minidom import Element
-
-
 def max_integer(my_list=[]):
     if my_list:
         max = my_list[0]
-        for elme in my_list:
-            if elme > max:
-                max = elme
+        for elm in my_list:
+            if elm > max:
+                max = elm
         return max
     return None
