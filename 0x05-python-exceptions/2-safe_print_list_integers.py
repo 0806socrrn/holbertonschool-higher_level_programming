@@ -1,16 +1,12 @@
 #!/usr/bin/python3
-from tokenize import Number
-
-
 def safe_print_list_integers(my_list=[], x=0):
-    Number = 0
-    for element in range(x):
+    number = 0
+    for count in range(x):
         try:
-            print("{:d}".format(my_list[element]), end="")
-        except (ValueError, TypeError):
-            continue
+            print("{:d}".format(my_list[count]), end="")
+        except (TypeError, ValueError):
+            pass
         else:
-            Number += 1
-
+            number += 1
     print("")
-    return Number
+    return number
