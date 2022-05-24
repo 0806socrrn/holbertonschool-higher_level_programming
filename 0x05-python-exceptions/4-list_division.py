@@ -1,22 +1,20 @@
 #!/usr/bin/python3
-from unittest import result
-
-
 def list_division(my_list_1, my_list_2, list_length):
-    result = []
-    for i in range(list_length):
+    list = []
+    number = 0
+    for number in range(list_length):
         try:
-            ans = my_list_1[i] / my_list_2[i]
-        except TypeError:
-            ans = 0
-            print("wrong type")
-        except IndexError:
-            ans = 0
-            print("out of range")
+            result = my_list_1[number]/my_list_2[number]
         except ZeroDivisionError:
-            ans = 0
             print("division by 0")
+            result = 0
+        except TypeError:
+            print("wrong type")
+            result = 0
+        except IndexError:
+            print("out of range")
+            result = 0
         finally:
-            result.append(ans)
-
-    return result
+            number += 0
+            list.append(result)
+    return(list)
