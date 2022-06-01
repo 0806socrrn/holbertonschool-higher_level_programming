@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This module has a simple rectangle class"""
 class Rectangle:
-    """"Rectangle"""
+    """Basic rectangle """
     pass
