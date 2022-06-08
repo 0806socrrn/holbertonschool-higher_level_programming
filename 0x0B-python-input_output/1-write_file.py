@@ -2,6 +2,7 @@
 """function that writes a string to a text file (UTF8) 
 and returns the number of characters written"""
 
+
 def number_of_lines(filename="", text=""):
     """This function returns the number of lines in a given file
     Args:
