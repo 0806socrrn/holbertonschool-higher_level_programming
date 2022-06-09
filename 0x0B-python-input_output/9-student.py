@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """student"""
+
+
 class Student():
     """Class student"""
+
     def __init__(self, first_name, last_name, age):
         """Initialization"""
         self.first_name = first_name
