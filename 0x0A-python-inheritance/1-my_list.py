@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""class that inherits `list` and adds a function to
-print the list sorted in ascending order"""
+""" a class MyList that inherits from list"""
 
 
 class MyList(list):
-    """kind of list with ordered impression"""
+    """MyList that inherits from list"""
 
-
-def print_sorted(self):
-    """prints the list ascending"""
-
-    print(sorted(self))
+    def print_sorted(self):
+        print(sorted(self))
