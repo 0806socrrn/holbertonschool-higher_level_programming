@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class Base():
     """This is a base class for all shape objects"""
     __nb_objects = 0
