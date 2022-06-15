@@ -1,10 +1,19 @@
 #!/usr/bin/python3
+"""
+Base class
+"""
+
+
 class Base():
-    """This is a base class for all shape objects"""
+    """
+    This is a base class for all shape objects
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initializes"""
+        """
+        Initializes
+        """
         if id is not None:
             self.id = id
         else:
