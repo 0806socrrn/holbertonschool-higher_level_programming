@@ -6,7 +6,7 @@ class TestBase(unittest.TestCase):
         b1 = Base()
         print(b1.id)
         self.assertEqual(b1.id, 1)
-
+        
         b2 = Base()
         print(b2.id)
         self.assertEqual(b2.id, 2)
