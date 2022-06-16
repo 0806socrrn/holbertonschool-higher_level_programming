@@ -91,7 +91,7 @@ class Rectangle(Base):
         if new_data < 0:
             raise ValueError("y must be >= 0")
         self.__y = new_data
-        
+
     def area(self):
         """
         Area
