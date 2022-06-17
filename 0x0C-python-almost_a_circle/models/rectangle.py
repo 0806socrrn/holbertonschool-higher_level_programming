@@ -97,7 +97,7 @@ class Rectangle(Base):
         Area
         """
         return(self.width * self.height)
-    
+
     def display(self):
         """
         Prints the stdout with the character #
