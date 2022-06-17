@@ -97,3 +97,29 @@ class Rectangle(Base):
         Area
         """
         return(self.width * self.height)
+    
+    def display(self):
+        """
+        Prints the stdout with the character #
+        """
+        result = ""
+        if self.height == 0 or self.width == 0:
+            print(result)
+            return
+        for x in range(self.height):
+            for y in range(self.width):
+                result += "#"
+            result += "\n"
+        result = result[0:-1]
+        print(result)
+        return
+
+    def __str__(self):
+        """
+        Prints the rectangle details
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x,
+                                                       self.y,
+                                                       self.width,
+                                                       self.height)
