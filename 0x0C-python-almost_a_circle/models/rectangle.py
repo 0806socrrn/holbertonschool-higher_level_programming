@@ -2,8 +2,6 @@
 """
 Base Rectangle
 """
-from ast import arg
-from turtle import width
 
 from models.base import Base
 
