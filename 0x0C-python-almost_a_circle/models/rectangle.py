@@ -123,3 +123,20 @@ class Rectangle(Base):
                                                        self.y,
                                                        self.width,
                                                        self.height)
+
+    def display(self):
+        """
+        Prints the stdout with the character # taking in consideration x & y
+        """
+        if self.height == 0 or self.width == 0:
+            print("")
+            return
+        for x in range(self.y):
+            print("")
+        for x in range(self.height):
+            for y in range(self.x):
+                print(" ", end="")
+            for y in range(self.width):
+                print("#", end="")
+            print("")
+        return
