@@ -39,3 +39,41 @@ class Square(Rectangle):
         """
         self.width = size
         self.height = size
+    def update(self, *args, **kwargs):
+        """
+        Override instance of rectangle
+        """
+        if args and len(args) > 0:
+            index = 0
+            for arg in args:
+                if index == 0:
+                    if arg is None:
+                        self.__init__(
+                            self.size,
+                            self.x,
+                            self.y)
+                    else:
+                        self.id = arg
+                if index == 1:
+                    self.size = arg
+                if index == 2:
+                    self.x = arg
+                if index == 3:
+                    self.y = arg
+                index += 1
+        elif kwargs and len(kwargs) > 0:
+            for k, v in kwargs.items():
+                if k == "size":
+                    self.size = v
+                if k == "x":
+                    self.x = v
+                if k == "y":
+                    self.y = v
+                if k == "id":
+                    if v is None:
+                        self.__init__(
+                            self.size,
+                            self.x,
+                            self.y)
+                    else:
+                        self.id = v
