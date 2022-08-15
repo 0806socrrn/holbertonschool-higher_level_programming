@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//Write a script that prints the first argument passed to
+// Write a script that prints the first argument passed to
 const argument = process.argv[2];
 if (argument === undefined) {
   console.log('No argument');
