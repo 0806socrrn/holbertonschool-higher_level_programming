@@ -1,3 +1,4 @@
+#!/usr/bin/node
 /*Write a script that imports an array and computes a new array.
 Your script must import list from the file 100-data.js
 You must use a map.
