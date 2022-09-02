@@ -1,3 +1,3 @@
 #!/bin/bash
-# Get The body  size  from outgoing  request to url introduced as argument
+# Bash script that takes in a URL, sends a request to that URL
 curl -sI "$1" | grep 'Content-Length:' | cut -c 17-
